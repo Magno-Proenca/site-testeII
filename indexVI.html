@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    .red-text {
-      color: red;
-      font-size: 30px; 
-    }
-</style> <!-- important :aqui adicionei o tamanho da fonte  que refletira em todas as outras class -->
-  
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!-- aqui acima adicionei o link da onde quero importar a fonte-->
+    <style>
+      .red-text {
+        color: red;
+      }
+      .smaller-image {
+        width: 100px;
+      }
+      h2 {
+        font-family: Lobster, monospace;
+      }
+    
+      p {
+        font-size: 16px;
+        font-family: monospace;
+      }
+    </style>
+    <!-- se eu deixar a monospace como segunda opcao, casoa  fonte Lobster falhe automaticamente eu a usarei
+    -->
+    <!--
+    foi adicionado acima o tipo de fonte que eu quis dar  para h2 
+    -->  
+    <!-- foi adicionada tbm a prioridade width atraves da classe smaller-image que foi criada-->
   <h2 class="red-text">CatPhotoApp</h2>
 </head>
 <body>  
 <main>
     <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
   
-    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    <a href="#"><img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
   
     <div>
       <p>Things cats love:</p>
