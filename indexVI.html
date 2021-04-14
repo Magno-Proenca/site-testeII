@@ -10,6 +10,11 @@
       .smaller-image {
         width: 100px;
       }
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style:solid;
+      }
       h2 {
         font-family: Lobster, monospace;
       }
@@ -19,20 +24,20 @@
         font-family: monospace;
       }
     </style>
-    <!-- se eu deixar a monospace como segunda opcao, casoa  fonte Lobster falhe automaticamente eu a usarei
+    <!-- se eu deixar a monospace como segunda opcao, caso a  fonte Lobster falhe automaticamente eu a usarei
     -->
     <!--
     foi adicionado acima o tipo de fonte que eu quis dar  para h2 
     -->  
-    <!-- foi adicionada tbm a prioridade width atraves da classe smaller-image que foi criada-->
+    <!-- foi adicionada tbm as propridades, alem do width, a color (que ja vimos) e style atraves da classe smaller-image e thick-green-border que foram criadas-->
   <h2 class="red-text">CatPhotoApp</h2>
 </head>
 <body>  
 <main>
     <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
   
-    <a href="#"><img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-  
+    <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+  <!--lembrando que pode se aplicar várias classes a um elemento usando seu class atributo, separando cada nome de classe com um espaço como no exemplo acima "smaller-image thick-green-border"-->
     <div>
       <p>Things cats love:</p>
       <ul>
