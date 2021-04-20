@@ -1,0 +1,34 @@
+<!--Substituir estilos em CSS subsequente
+Nossa pink-textclasse sobrescreveu a bodydeclaração CSS do nosso elemento!
+
+Acabamos de provar que nossas classes substituirão o bodyCSS do elemento. Portanto, a próxima pergunta lógica é: o que podemos fazer para substituir nossa pink-textclasse?
+
+Crie uma classe CSS adicional chamada blue-textque dá a um elemento a cor azul. Certifique-se de que está abaixo de sua pink-textdeclaração de classe.
+
+Aplique a blue-textclasse ao seu h1elemento, além da sua pink-textclasse, e vamos ver qual delas ganha.
+
+A aplicação de vários atributos de classe a um elemento HTML é feita com um espaço entre eles como este:
+
+class="class1 class2"
+Nota: Não importa a ordem em que as classes são listadas no elemento HTML.
+
+No entanto, a ordem das class declarações na <style> seção é o que importa. A segunda declaração sempre terá precedência sobre a primeira. Por .blue-textser declarado em segundo lugar, ele substitui os atributos de.pink-text
+
+-->
+
+
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+  
+    .blue-text {
+      color:blue;
+    }
+  </style>
+  <h1 class="pink-text blue-text">Hello World!</h1>

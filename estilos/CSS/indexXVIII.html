@@ -1,0 +1,26 @@
+<!--Substituir declarações de classe com estilos embutidos
+Portanto, provamos que as declarações de id substituem as declarações de classe, independentemente de onde são declaradas no styleCSS do seu elemento.
+
+Existem outras maneiras de sobrescrever o CSS. Você se lembra dos estilos embutidos?
+
+Use um estilo embutido para tentar tornar nosso h1elemento branco. Lembre-se de que os estilos de linha são assim:
+
+<h1 style="color: green;">
+Deixe as classes blue-texte pink-textem seu h1elemento.-->
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 style="color:white" id="orange-text" class="pink-text blue-text">Hello World!</h1>

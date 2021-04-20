@@ -1,0 +1,32 @@
+<!--Substitua todos os outros estilos usando Importante
+Yay! Acabamos de provar que os estilos embutidos sobrescreverão todas as declarações CSS em seu styleelemento.
+
+Mas espere. Existe uma última maneira de substituir o CSS. Este é o método mais poderoso de todos. Mas antes de fazermos isso, vamos falar sobre por que você deseja substituir o CSS.
+
+Em muitas situações, você usará bibliotecas CSS. Eles podem substituir acidentalmente seu próprio CSS. Portanto, quando você precisar ter certeza absoluta de que um elemento possui CSS específico, poderá usá-lo !important.
+
+Vamos voltar à nossa pink-textdeclaração de classe. Lembre-se de que nossa pink-textclasse foi substituída por declarações de classe subsequentes, declarações de id e estilos embutidos.
+
+Vamos adicionar a palavra !important- chave à declaração de cor do seu elemento de texto rosa para ter 100% de certeza de que seu h1elemento será rosa.
+
+Um exemplo de como fazer isso é:
+
+color: red !important;-->
+
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink !important;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>

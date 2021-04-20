@@ -1,0 +1,21 @@
+<!--Melhore a compatibilidade com os substitutos do navegador
+Ao trabalhar com CSS, você provavelmente terá problemas de compatibilidade do navegador em algum momento. É por isso que é importante fornecer substitutos do navegador para evitar possíveis problemas.
+
+Quando seu navegador analisa o CSS de uma página da web, ele ignora todas as propriedades que não reconhece ou suporta. Por exemplo, se você usar uma variável CSS para atribuir uma cor de fundo em um site, o Internet Explorer irá ignorar a cor de fundo porque não oferece suporte a variáveis ​​CSS. Nesse caso, o navegador usará qualquer valor que tiver para essa propriedade. Se não conseguir encontrar nenhum outro valor definido para essa propriedade, ele reverterá para o valor padrão, que normalmente não é o ideal.
+
+Isso significa que, se você deseja fornecer um substituto do navegador, é tão fácil quanto fornecer outro valor com suporte mais amplo imediatamente antes de sua declaração. Dessa forma, um navegador mais antigo terá algo em que se apoiar, enquanto um navegador mais recente apenas interpretará qualquer declaração que vier depois na cascata.
+
+Parece que uma variável está sendo usada para definir a cor de fundo da .red-boxclasse. Vamos melhorar a compatibilidade do nosso navegador adicionando outra backgrounddeclaração antes da declaração existente e definir seu valor como red.-->
+
+<style>
+    :root {
+      --red-color: red;
+    }
+    .red-box {
+      background: red; 
+      background: var(--red-color);
+      height: 200px;
+      width:200px;
+    }
+  </style><!-- la em cima em root deve ser inserida a resposta do exercicio-->
+  <div class="red-box"></div>

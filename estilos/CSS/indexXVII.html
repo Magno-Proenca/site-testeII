@@ -1,0 +1,37 @@
+<!--Substituir declarações de classe por atributos de ID de estilo
+Acabamos de provar que os navegadores leem CSS de cima para baixo na ordem de sua declaração. Isso significa que, em caso de conflito, o navegador usará a última declaração CSS. Observe que se tivéssemos colocado blue-textantes pink-textnas h1classes de nosso elemento, ele ainda veria a ordem da declaração e não a ordem de seu uso!
+
+Mas ainda não terminamos. Existem outras maneiras de sobrescrever o CSS. Você se lembra dos atributos de id?
+
+Vamos sobrescrever suas classes pink-texte blue-text, e tornar seu h1elemento laranja, dando ao h1elemento um id e, em seguida, estilizando esse id.
+
+Dê ao seu h1 elemento o id atributo de orange-text. Lembre-se de que os estilos de id são assim:
+
+<h1 id="orange-text">
+Deixe as classes blue-texte pink-textem seu h1elemento.
+
+Crie uma declaração CSS para seu orange-textid em seu styleelemento. Aqui está um exemplo de como isso se parece:
+
+#brown-text {
+  color: brown;
+}
+Nota: Não importa se você declara este CSS acima ou abaixo da pink-textclasse, pois o idatributo sempre terá precedência.-->
+
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  
+    #orange-text {
+      color:orange;
+    }
+  </style>
+  <h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
